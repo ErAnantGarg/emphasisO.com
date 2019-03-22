@@ -1,293 +1,237 @@
 <html>
-<head>
-<meta charset="utf-8">
- <meta name="viewport" content="width=device-width, initial-scale=1">
- <!-- font awesome -->
- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
- <!--Import Google Icon Font-->
- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
- <!-- Compiled and minified CSS -->
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-
-<title>EmphasisO 2019</title>
-<link rel="stylesheet" href="style.css">
-<script src="script.js" defer></script>
-</head>
-<body onLoad="width_check(w,h)" onresize="width_check(w,h)">
-
-<div id="loading_screen" style="position: fixed; width: 100%; height: 100%;z-index:3;background-color:#1a0000" class="w3-light-grey">
-	<div class="loader" style=""><img id="loading_gif" src="emphasiso_gif.gif"></div>
-</div>
-<script>
-function _(a){return document.getElementById(a);}
-	w = window.innerWidth;
-	h = window.innerHeight;
-		_("loading_gif").style.marginLeft = (w-_("loading_gif").width)/2;
-		_("loading_gif").style.marginTop = (h-_("loading_gif").height)/2;
-</script>
-<p id="demo" style="position:fixed;z-index:111;background-color:white">_</p>
-
-<div id="main" style="overflow:hidden">
-<div>
-	<div id="col1" class="red" style="width:100%;height:100%;">
-    <header>
-      <nav class="nav-wrapper transparent">
-
-    	<div id="background_image_wrap1" style="position:absolute;width:100%;height:100%;"></div>
-        <div id="col1_content" class="white" style="position:absolute;z-index:2;width:100%;height:200px;display:none" data-float-align="left"></div>
-        <div  style="position:absolute;width:100%;height:100%;">
-        	<div id="top_nav_btn" style="right:0;padding:20px;position:fixed;z-index:1">
-
-            <ul>
-            <li><a href="#">E-SUMMIT 2019</a></li>
-            <li><a href="#">INTERNSHIP FAIR 2019</a></li>
-            <li>
-              <a href="https://www.instagram.com/emphasis_o/" target="_blank" class="tooltipped btn-floating btn-small pink" data-tooltip="Instagram">
-                <i class="fab fa-instagram"></i>
-              </a>
-              <a href="https://www.facebook.com/emphasiso/" target="_blank" class="tooltipped btn-floating blue darken-4 btn-small" data-tooltip="Facebook">
-                <i class="fab fa-facebook"></i>
-              </a>
-              <a href="https://twitter.com/" target="_blank" class="btn-floating btn-small blue tooltipped" data-tooltip="Twitter">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
-            </ul>
-        	</div>
-        	<img id="background_logo_wrap1" src="emphasiso-logo-full.png" alt="event_poster1">
-
-		</div>
-    	<div id="col_wrap_1" style="position:absolute;width:100%;display:none;background-color:#2e0000"></div>
-    </nav>
-    </header>
-        <br><br><br><br><br><br><br><br>
-	</div>
-
-
-
-    <div id="col2" class="red ah-texture-1 ah-card-1" style="width:100%;overflow:hidden;background-color:red;">
-    	<div id="col2_content" data-float-align="left" style="width:100%;">
-        	<div class="card black ah-card-2" style="background-color:#2e0000;box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
-            	<div style="text-align:right;padding:20px;width:100%;" class="text-white">
-                	<h4>About Us</h4>
-                    <p>EmphasisO E-SUMMIT is a two day event orgnized by Centre for Innovation and Entrepreneurship. The event aims at the core value of building a startup and solving real life problems thereby.<br> It is the first of its kind initiative taken in JMI to help nurture the spark of entrepreneurship in students. It will also lead to innovative ways of job creation in the university.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="col3" class="red ah-texture-1 ah-card-1" style="width:100%;overflow:hidden;background-color:red;">
-    	<div id="col3_content" data-float-align="right" style="width:100%;">
-        	<div class="card black ah-card-2" style="background-color:#2e0000;box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
-            	<div style="text-align:left;padding:20px;width:100%;" class="text-white">
-                	<h4>CENTRE FOR INNOVATION AND ENTREPRENEURSHIP </h4>
-				<p>Centre for Innovation and Entrepreneurship Jamia Millia Islamia, New Delhi, established in the year 2014 provides a unique platform to the students of the university to implement their innovative ideas.<br>The Centre for Innovation and Entrepreneurship (CIE) at JMI has two divisions namely: The Innovation Centre and Livelihood Businness Incubator. The Centre is dedicated to serve the nation and the mankind through their initiatives and hopes to be helpfull in the sustainable development of the Nation.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-	<div id="col4" class="red ah-texture-1 ah-card-1" style="width:100%;overflow:hidden;background-color:red;">
-    	<div id="col4_content" data-float-align="left" style="width:100%;">
-        	<div class="card black ah-card-2" style="background-color:#2e0000;box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
-            	<div style="text-align:left;padding:20px;width:100%;" class="text-white">
-                	<h4>OBJECTIVES</h4>
-                    <p>*To connect and grow more new business.<br>*Access Indian markets and business.<br>*To promote and launch innovation driven products and services.<br>*To establish fruitful partnerships and collaborations with governments, industry and institutions.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-</div>
- <div class="ah-texture-1" id="page-3">
-
-    	<div style="width:80%;margin-left:auto;margin-right:auto" class="text-white">
-        	 <h1>E-SUMMIT 2019</h1>
-        	<div class="card entrepreneurship_talk ah_cards-1-2" style="">
-            <div class="read_more1" style="width:100%;height:100%;background-color:red;position:absolute;z-index:0;background-color:#1a0000;"><a href="#" class="btn btn btn-light" role="button"><b>Read more</b></a>
-            </div>
-            	<h5 style="position:absolute;bottom:0;background-color:#1a0000;opacity:.8;width:100%;height:50px">ENTREPRENEURSHIP TALK</h5>
-            </div>
-            <div class="card invester_talk ah_cards-1-2" style="">
-            <div class="read_more1" style="width:100%;height:100%;background-color:red;position:absolute;z-index:0;background-color:#1a0000;"><a href="#" class="btn btn btn-light" role="button"><b>Read more</b></a>
-            </div>
-            	<h5 style="position:absolute;bottom:0;background-color:#1a0000;opacity:.8;width:100%;height:50px">INVESTER TALK</h5>
-            </div>
-            <div class="card get_funded ah_cards-1-2" style="">
-            <div class="read_more1" style="width:100%;height:100%;background-color:red;position:absolute;z-index:0;background-color:#1a0000;"><a href="#" class="btn btn btn-light" role="button"><b>Read more</b></a>
-            </div>
-            	<h5 style="position:absolute;bottom:0;background-color:#1a0000;opacity:.8;width:100%;height:50px">GET FUNDED</h5>
-            </div>
-            <div class="card startup_expo ah_cards-1-2" style="">
-            <div class="read_more1" style="width:100%;height:100%;background-color:red;position:absolute;z-index:0;background-color:#1a0000;"><a href="#" class="btn btn btn-light" role="button"><b>Read more</b></a>
-            </div>
-            	<h5 style="position:absolute;bottom:0;background-color:#1a0000;opacity:.8;width:100%;height:50px">STARTUP EXPO</h5>
-            </div>
-
-		<div style="clear:both"></div>
-    </div>
-    <br><br><br><br>
-</div>
- <div class="ah-texture-1 text-white " id="page-4">
-
-<div style="width:80%;margin-left:auto;margin-right:auto;">
- <h1>OUR SPEAKERS</h1><br><br>
-    <div class="card member ah-texture-1">
-        <div class="circle red dp card" style="background-image: url(jack.jpg);background-repeat: no-repeat;background-size: cover;">
-        </div>
-        <div style="position:relative;top:-50px;text-align:center">
-            <h3>CEO of XYZ</h3>
-        </div>
-    </div>
-    <div class="card member ah-texture-1">
-        <div class="circle red dp card" style="background-image: url(jack.jpg);background-repeat: no-repeat;background-size: cover;">
-        </div>
-        <div style="position:relative;top:-50px;text-align:center">
-            <h3>CEO of XYZ</h3>
-        </div>
-    </div>
-    <div class="card member ah-texture-1">
-        <div class="circle red dp card" style="background-image: url(jack.jpg);background-repeat: no-repeat;background-size: cover;">
-        </div>
-        <div style="position:relative;top:-50px;text-align:center">
-            <h3>CEO of XYZ</h3>
-        </div>
-    </div>
-        <div class="card member ah-texture-1">
-        <div class="circle red dp card" style="background-image: url(jack.jpg);background-repeat: no-repeat;background-size: cover;">
-        </div>
-        <div style="position:relative;top:-50px;text-align:center">
-            <h3>CEO of XYZ</h3>
-        </div>
-    </div>
-    <div style="clear:both"></div>
-</div>
- </div>
-<div class=" ah-texture-1 text-white" id="page-5" style="background-color:#1a0000">
-	<div class="card ah-texture-1" style="width:60%;margin-left:auto;margin-right:auto;">
-    <h3>FAQ's</h3>
-    	<div style="padding-left:10px"><h5>Is EmphasisO free?</h5><p>It’s not. Prior to the event registration will begin on the website. There will be a minimal amount to be charged for spectators’ assurance.</p>
-		</div>
-        <hr>
-        <div style="padding-left:10px"><h5>How & When to register?</h5><p>Prior to the event registration will begin. It will be notified on the website itself. Also, on all the social media pages of EmphasisO.</p>
-        </div>
-        <hr>
-        <div style="padding-left:10px"><h5>Who can apply for Startup Internship Fair?</h5><p>Prior to the event all can apply for the internship fair, then candidates will be shortlisted as per their capabilities and respective experiences. Then, they could face startup interviews.</p>
-        </div>
-        <hr>
-        <div style="padding-left:10px"><h5>What is FinFO?</h5><p>FinFO is a news aggregator app, a startup in Jamia. EmphasisO is an initiative by FinFO founders.</p>
-        </div>
-        <hr>
-	</div>
-</div>
-<div id="page-6" class="ah-texture-1 text-white">
-<div style="width:80%;margin-left:auto;margin-right:auto">
-  <h2 class="indigo-text text-darken-4">CONTACT US</h2>
-	 <div class="row ah-texture-1">
-     	<div class="col" >
-        	<div>
-            	<p><i class='far fa-envelope'></i> asdf@me.com</p>
-                <p><i class='fas fa-phone'></i> 987654321</p>
-                <p><i class='fa fa-map-marker'></i> Jamia Milla Islamia, New Delhi 110025</p>
-            </div>
-		</div>
-        <div class="col">
-          <form class="" action="index.html" method="post">
-
-        	<div class="row ah-texture-1">
-            <div class="input-field">
-              <input type="email" id="name">
-              <label for="name">your name here</label>
-            </div>
-            <div class="col s12 l5 offset-l2">
-            <div class="input-field">
-              <i class="material-icons prefix yellow-text">email</i>
-              <input type="email" id="email">
-              <label for="email">your email here</label>
-            </div>
-          </div>
-          </div>
-
-          <div class="input-field">
-            <i class="material-icons red-text prefix">message</i>
-            <textarea id="message" class="materialize-textarea"></textarea>
-            <label for="message">message</label>
-          </div>
-                    <br>
-                    <div class="input-field center">
-                      <button type="submit" name="button" class="btn"><i class='fas fa-paper-plane'></i> Submit</button>
-                    </div>
-</form>
-        </div>
-	</div>
-</div>
-</div>
-</div>
-
-<footer class="grey darken-3 page-footer">
-  <div class="container">
-    <div class="row">
-      <div class="col s12 l6">
-        <p>For sponsorship Opportunities
-Contact: me@gmail.in</p>
-            </div>
-            <div class="col" style="text-align:center">
-            	<p>For Speaking Opportunities
-Contact: me@gmail.in</p>
-            </div>
-            <div class="col" style="text-align:center">
-            	<p>For Association Opportunities
-Contact: me@gmail.in</p>
-            </div>
-		</div>
-      </div>
-      
-    </div>
-    <div class="footer-copyright">
-      <div class="container center-align">&copy;CENTRE FOR INNOVATION AND ENTREPRENEURSHIP
-        </div>
-      </div>
-  </div>
-</footer>
-
-
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-
-</body>
-</html>
+	<head>
+    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="E-Summit 2019 New Delhi Jamia">
+        <meta name="keywords" content="ENTREPRENEURSHIP TALK | INVESTOR TALK | STARTUP EXPO | GET FUNDED">
+        <meta name="author" content="John Doe">
+	</head>
 <style>
-
+.tabs .tab a{color:#e6e6e6;}
+.tabs .tab a:hover { color:#fff; }
+.tabs .tab a.active { color:#fff; }
+.tabs .indicator { background-color:#fff; }
+.green-text{ color: #417505 !important;font-size:30px }
+.home_title{font-size:60px}
+.home_img{height:400px;margin-left:auto;margin-right:auto;}
+@media screen and (max-width: 600px) {
+.home_title{font-size:30px}
+}
+@media screen and (max-width: 1200px) and (min-width: 600px) {
+.center-hv{display: flex;align-items: center;}
+.home_title{font-size:40px}
+#test2{height:100%}
+}
+@media screen and (min-width: 1200px) {
+.center-hv{display: flex;align-items: center;}
+#test2{height:100%}
+}
+ul.a {list-style-type: circle;}
+.rotate-45 {-webkit-transform: rotate(-45deg);-moz-transform: rotate(-45deg);-ms-transform: rotate(-45deg);-o-transform: rotate(-45deg);transform: rotate(-45deg);}
 </style>
-<script>
-flag1=0;
-var chkReadyState = setInterval(function(w,h) {
-    if (document.readyState == "complete" && flag1==1) {
-        // clear the interval
-        clearInterval(chkReadyState);
-        _("loading_screen").style.display="none";
-		window.scrollBy({
-			top: -document.body.scrollTop, // negative value acceptable
-			left: 0,
-			behavior: 'smooth'
-		});
-		width_check(w,h);
-    }
-}, 100);
-window.setInterval(function(){flag1=1;}, 1500);
-var loadCss = function(){
-    var cssLink = document.createElement('link');
-    cssLink.rel = 'stylesheet';
-    cssLink.href = 'https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css';
-    var head = document.getElementsByTagName('head')[0];
-    head.parentNode.insertBefore(cssLink, head);
-	var cssLink = document.createElement('link');
-    cssLink.rel = 'stylesheet';
-    cssLink.href = 'https://use.fontawesome.com/releases/v5.7.0/css/all.css';
-    var head = document.getElementsByTagName('head')[0];
-    head.parentNode.insertBefore(cssLink, head);
-};
-//call function on window load
-window.addEventListener('load', loadCss);
+<body>
+<div id="nav" class="blue card animated fadeInDown" style="margin:0;position:fixed;width:100%;z-index:1">
+    <div class="container">
+        <ul class="tabs blue text-a hide-on-small-and-down1 tabs-fixed-width" id="tab">
+            <li class="tab col s3"><a target="_self" href="http://emphasiso.com">Home</a></li>
+            <li class="tab col s3"><a class="active" href="#entrepreneurship_talk">ENTREPRENEURSHIP TALK</a></li>
+            <li class="tab col s3"><a href="#investor_talk">INVESTOR TALK</a></li>
+            <li class="tab col s3"><a href="#startup_expo">STARTUP EXPO</a></li>
+            <li class="tab col s3"><a href="#get_funded">GET FUNDED</a></li>
+        </ul>
+    </div>
+</div>
+<div class="  animated fadeInUp">
+    <div class="blue" id="entrepreneurship_talk" style="z-index:0">
+        <div class="row hide-on-small-and-down">
+            <div class="col s12 l6 m6 center-hv center" style="height:100%">
+                <img src="assets/images/entrepreneurship_talk.png?" class="home_img">
+            </div>
+            <div class="col s12 l6 m6 white-text center-hv" style="height:100%">
+                <h4 class="home_title center">ENTREPRENEURSHIP TALK</h4>            
+            </div>
+        </div>
+        <div class="row show-on-small " style="display:none">
+            <div class="col s12 l6 m6 center">
+                <img src="assets/images/entrepreneurship_talk.png?aaa" class="home_img">
 
+            </div>
+            <div class="col s12 l6 m6 white-text center-hv">
+                <h4 class="home_title center">ENTREPRENEURSHIP TALK</h4>            
+            </div>
+        </div>
+    
+    	<div id="content1" class="center white">
+        	<div class="container"  style="padding:15px">
+            	<h5><b>What is ENTREPRENEURSHIP TALK</b></h5>
+            	<ul>
+                	<li>
+                    	<i class='fas fa-caret-right'></i> Entrenpreneurship is not and never restricted to any specific field. Any person
+or individual who comes with a new innovative idea in their respective field can be
+treated as an Enterpreneur.</li>
+                	<li><i class='fas fa-caret-right'></i> E-summit'19 comes with a special event called Enterpreneurs talk in which Enterpreneurs
+from diversified sectors such as ....  will be sharing their experinces.</li>
+
+            	</ul>
+        	</div>
+    	</div>
+        <div id="content2" class="row white ">
+        <div class="container" >
+        	<div class="col s12 l4 m4 " style="margin-top:15px">
+            	<div class="card">
+                	<img src="assets/images/Kunwer-Sachdev.png" style="width:100%">
+                </div>
+            </div>
+            <div class="col s12 l8 m8">
+            	<div>
+                <p><h3>Mr. Kunwer Sachdeva</h3><h5>Founder, SuKam inverters</h5></p>
+                <p>The Solar Man of India, Kunwer Sachdeva the founder of India's leading power solutions company - Su-Kam® Power Systems, is one of the greatest innovator, marketer, motivational speaker and visionary entrepreneur of our times.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="blue" id="investor_talk" >
+        <div class="row hide-on-small-and-down">
+            <div class="col s12 l6 m6 center-hv center" style="height:100%">
+                <img src="assets/images/investor_talk.png?a" class="home_img">
+            </div>
+            <div class="col s12 l6 m6 white-text center-hv" style="height:100%">
+                <h4 class="home_title center">INVESTOR TALK</h4>            
+            </div>
+
+        </div>
+        <div class="row show-on-small" style="display:none">
+            <div class="col s12 l6 m6 center-hv center">
+                <img src="assets/images/investor_talk.png?qqa" class="home_img">
+
+            </div>
+            <div class="col s12 l6 m6 white-text center-hv">
+                <h4 class="home_title center">INVESTOR TALK</h4>            
+            </div>
+        </div>
+    
+    	<div id="content1" class="center white">
+        	<div class="container"  style="padding:15px">
+            	<h5><b>HIGHLIGHT</b></h5>
+            	<ul>
+                    <li>
+                        <i class='fas fa-caret-right'></i> The act of commiting money or capital to an endeavor with the expectation of 
+obtaining an additional income or profit.</li>
+                        <li><i class='fas fa-caret-right'></i> Investors from your sector that are present will personally visit your stall at 
+different times during the E-summit to interact with you and know about your firm.</li>
+                </ul>
+            </div>
+    	</div>
+    </div>
+    <div class="blue" id="startup_expo" >
+        <div class="row hide-on-small-and-down">
+            <div class="col s12 l6 m6 center-hv center" style="height:100%">
+                <img src="assets/images/startup_expo.png?a" class="home_img">
+            </div>
+            <div class="col s12 l6 m6 white-text center-hv" style="height:100%">
+                <h4 class="home_title center">STARTUP EXPO</h4>            
+            </div>
+        </div>
+        <div class="row show-on-small" style="display:none">
+            <div class="col s12 l6 m6 center-hv center">
+                <img src="assets/images/startup_expo.png?aq" class="home_img">
+
+            </div>
+            <div class="col s12 l6 m6 white-text center-hv">
+                <h4 class="home_title center">STARTUP EXPO</h4>            
+            </div>
+        </div>
+    
+    	<div id="content1" class="center white">
+        	<div class="container" style="padding:15px">
+            	<h5><b>HIGILIGHT</b></h5>
+            	
+                <ul>
+                    <li><i class='fas fa-caret-right'></i> We are proud to present the most colossal edition of  Startup Expo , this expo enables  the most promising and versatile start-ups to conquer markets  by getting high visibility transformative platform where they can showcase their ventures and meet investors. </li>
+
+                </ul>
+                <h5><b>The key highlights of Start-up Expo are:</b></h5>
+                <ul>
+                    <li><i class='fas fa-caret-right'></i>  interaction with investors</li>
+                    <li><i class='fas fa-caret-right'></i> explore partnership opportunities</li>
+                    <li><i class='fas fa-caret-right'></i>  find potential customers</li>
+                    <li><i class='fas fa-caret-right'></i> interact with all the stakeholders that can   help to scale new heights.</li>
+                </ul>
+                <h5><b>StartUp Expo 2019 Prize :</b></h5>
+                    <ul>
+                        <li><i class='fas fa-caret-right'></i>  All Registered eligible participants shall be eligible for the award nomination. Prize money to be won for Product-Stage Startups </li>
+                    </ul>
+<a class="waves-effect waves-light btn-large blue" href="https://goo.gl/forms/sTP017ZZGHwq5dIk1        "><i class="fa fa-rocket right rotate-45"></i>Register</a>
+
+        	</div>
+    	</div>
+    </div>
+    <div class="blue" id="get_funded" >
+        <div class="row hide-on-small-and-down">
+            <div class="col s12 l6 m6 center-hv center" style="height:100%">
+                <img src="assets/images/get_funded.png?a" class="home_img">
+            </div>
+            <div class="col s12 l6 m6 white-text center-hv" style="height:100%">
+                <h4 class="home_title center">GET FUNDED</h4>            
+            </div>
+        </div>
+        <div class="row show-on-small" style="display:none">
+            <div class="col s12 l6 m6 center-hv center">
+                <img src="assets/images/get_funded.png?asa" class="home_img">
+
+            </div>
+            <div class="col s12 l6 m6 white-text center-hv">
+                <h4 class="home_title center">GET FUNDED</h4>            
+            </div>
+        </div>
+    
+    	<div id="content1" class="center white">
+        	<div class="container" style="padding:15px">
+            	<h5><b>HIGILIGHT</b></h5>
+            	    <ul>
+                        <li><i class='fas fa-caret-right'></i> Money is the bloodline of any business.
+If your idea is absolutely rock solid and can excite the interest of investors then,
+this contest can tremendously help you to maximize the opportunities for fund raising,
+you can either present your idea in person or pitch it through a business plan.
+Winning these competitions can also get you media coverage and can help you  in marketing the product alongside financing.
+Chances of get working capital loan by banks
+is also high.
+There  are also  "reward" in exchange for financial contribution, typically in the form of a product or service.</li>
+
+                    </ul>
+                        <a class="waves-effect waves-light btn-large blue" href="https://goo.gl/forms/M7YCbvBwZTgWKwcn2       "><i class="fas fa-hand-holding-usd right"></i>get funded</a>
+        	</div>
+    	</div>
+    </div>
+
+
+</div>
+<div id="footer" class="blue" style="widht:100%">
+	<div class="row white-text center">
+    	<div class="col s12 l4 m4">
+        	<p><b>For sponsorship Opportunities</b></p>
+            <p><b>upc@jmi.ac.in</b></p>
+        </div>
+        <div class="col s12 l4 m4">
+        	<p><b>For Speaking Opportunities Contact: </b></p>
+            <p><b>rsuri@jmi.ac.in</b></p>
+        </div>
+        <div class="col s12 l4 m4">
+        	<p><b>For Association Opportunities Contact: </b></p>
+            <p><b>cie@jmi.ac.in</b></p>
+        </div>
+    </div>
+	<div class="blue container center white-text">
+	©2019 EmphasisO
+    </div>
+</div>
+</body>
+<script>
+
+  var instance = M.Tabs.init(document.getElementById("tab"));
 </script>
+</html>
